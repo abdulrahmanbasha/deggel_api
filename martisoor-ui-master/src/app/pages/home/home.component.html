@@ -1,0 +1,1223 @@
+<!-- ========== MAIN CONTENT ========== -->
+<main id="content">
+    <!-- ========== HERO ========== -->
+    <div class="hero-block hero-v1 bg-img-hero-bottom gradient-overlay-half-black-gradient text-center z-index-2" style="background-image: url(../../../assets/img/home/1.jpg);">
+        <div class="container space-2 space-top-xl-9">
+            <div class="row justify-content-md-center pb-xl-8">
+                <!-- Info -->
+                <div class="py-8 py-xl-10 pb-5">
+                    <h1 class="font-size-60 font-size-xs-30 text-white font-weight-bold">Welcome to Deggel</h1>
+                    <p class="font-size-20 font-weight-normal text-white">Find awesome hotel, houses and event halls</p>
+                </div>
+                <!-- End Info -->
+            </div>
+            <div class="mb-lg-n16">
+                <!-- Nav Classic -->
+                <ul class="nav tab-nav-rounded flex-nowrap pb-2 pb-md-4 tab-nav" role="tablist" style="align-content: center;">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-medium active pl-md-5 pl-3" id="pills-one-example2-tab" data-toggle="pill" href="#pills-one-example2" role="tab" aria-controls="pills-one-example2" aria-selected="true">
+                            <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+                                <figure class="ie-height-40 d-md-block mr-md-3">
+                                    <i class="icon flaticon-hotel font-size-3"></i>
+                                </figure>
+                                <span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">Hotel</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-medium" id="pills-two-example2-tab" data-toggle="pill" href="#pills-two-example2" role="tab" aria-controls="pills-two-example2" aria-selected="true">
+                            <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+                                <figure class="ie-height-40 d-md-block mr-md-3">
+                                    <i class="icon flaticon-home font-size-3"></i>
+                                </figure>
+                                <span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">Guest House</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-medium" id="pills-three-example2-tab" data-toggle="pill" href="#pills-three-example2" role="tab" aria-controls="pills-three-example2" aria-selected="true">
+                            <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+                                <figure class=" ie-height-40  d-md-block mr-md-3">
+                                    <i class="icon flaticon-climbing font-size-3"></i>
+                                </figure>
+                                <span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">EventHall</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-medium" id="pills-four-example2-tab" data-toggle="pill" href="#pills-four-example2" role="tab" aria-controls="pills-four-example2" aria-selected="true">
+                            <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+                                <figure class="ie-height-40 d-md-block mr-md-3">
+                                    <i class="icon flaticon-home font-size-3"></i>
+                                </figure>
+                                <span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">House</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Nav Classic -->
+                <div class="tab-content hero-tab-pane">
+                    <div class="tab-pane fade active show" id="pills-one-example2" role="tabpanel" aria-labelledby="pills-one-example2-tab">
+                        <!-- Search Jobs Form -->
+                        <div class="card border-0 tab-shadow">
+                            <div class="card-body">
+                                <form class="js-validate" (ngSubmit)="searchHotels()">
+                                  <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
+                                    <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0">
+                                        <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Destination or Hotel Name</span>
+                                        <!-- Select -->
+                                        <select [(ngModel)]="model.city" name="city" class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold" title="Where are you going?"
+                                            data-style=""
+                                            data-live-search="true"
+                                            data-searchbox-classes="input-group-sm">
+                                            <option class="border-bottom border-color-1" value="Hargeisa" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Hargeisa</span>
+                                                </span>'>
+                                                Hargeisa
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="Ceerigaabo" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16"> Ceerigaabo</span>
+                                                </span>'>
+                                                Ceerigaabo
+                                            </option>
+                                            <option  class="border-bottom border-color-1" value="Berbera" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Berbera</span>
+                                                </span>'>
+                                                Berbera
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="Burco" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Burco</span>
+                                                </span>'>
+                                                Burco
+                                            </option>
+                                            <option class="" value="Borama" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Borama</span>
+                                                </span>'>
+                                               Borama
+                                            </option>
+                                        </select>
+                                        <!-- End Select -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Check In - Out</span>
+                                        <div class="border-bottom border-width-2 border-color-1">
+                                            <div id="datepickerWrapperFromOne" class="u-datepicker input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="d-flex align-items-center mr-2">
+                                                      <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                    </span>
+                                                </div>
+                                                 <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0" type="date"
+                                                     data-rp-wrapper="#datepickerWrapperFromOne"
+                                                     data-rp-type="range"
+                                                     data-rp-date-format="M d / Y"
+                                                     data-rp-default-date='["Jul 7 / 2020", "Aug 25 / 2020"]'  [(ngModel)]="model.checkinout" name="checkinout">
+                                            </div>
+                                             <!-- End Datepicker -->
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0 dropdown-custom">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Rooms and Guests</span>
+                                        <a id="basicDropdownClickInvoker" class="dropdown-nav-link dropdown-toggle d-flex pt-3 pb-2" href="javascript:;" role="button"
+                                            aria-controls="basicDropdownClick"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-target="#basicDropdownClick"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-duration="300"
+                                            data-unfold-delay="300"
+                                            data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp"
+                                            data-unfold-animation-out="fadeOut">
+                                            <i class="flaticon-plus d-flex align-items-center mr-3 font-size-18 text-primary font-weight-semi-bold"></i>
+                                            <span class="text-black font-size-16 font-weight-semi-bold">2 Rooms - 3 Guests</span>
+                                        </a>
+                                        <div id="basicDropdownClick" class="dropdown-menu dropdown-unfold col-11 m-0" aria-labelledby="basicDropdownClickInvoker">
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Rooms</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class=" form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" [(ngModel)]="model.rooms"  name="rooms" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Adults</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Child</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-right py-1 pr-5">
+                                                <a class="text-primary font-weight-semi-bold font-size-16" href="#">Done</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-2 align-self-lg-end text-md-right">
+                                        <button type="submit"  class="btn btn-primary w-100 border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass font-size-20 mr-2"></i>Search</button>
+                                    </div>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Search Jobs Form -->
+                    </div>
+                    <div class="tab-pane fade" id="pills-two-example2" role="tabpanel" aria-labelledby="pills-two-example2-tab">
+                        <!-- Search Jobs Form -->
+                        <div class="card border-0 tab-shadow">
+                            <div class="card-body">
+                                <form class="js-validate">
+                                  <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
+                                    <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Destination or Hotel Name</span>
+                                        <!-- Select -->
+                                        <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold" title="Where are you going?"
+                                            data-style=""
+                                            data-live-search="true"
+                                            data-searchbox-classes="input-group-sm">
+                                            <option class="border-bottom border-color-1" value="project1" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">London, United Kingdom</span>
+                                                </span>'>
+                                                London, United Kingdom
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project2" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New York, United States</span>
+                                                </span>'>
+                                                New York, United States
+                                            </option>
+                                            <option  class="border-bottom border-color-1" value="project3" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New South Wales, Australia</span>
+                                                </span>'>
+                                                New South Wales, Australia
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Istanbul, Turkey</span>
+                                                </span>'>
+                                                Istanbul, Turkey
+                                            </option>
+                                            <option class="" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Reykjavík, Iceland</span>
+                                                </span>'>
+                                                Reykjavík, Iceland
+                                            </option>
+                                        </select>
+                                        <!-- End Select -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Check In - Out</span>
+                                        <div class="border-bottom border-width-2 border-color-1">
+                                            <div id="datepickerWrapperFromTwo" class="u-datepicker input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="d-flex align-items-center mr-2">
+                                                      <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                    </span>
+                                                </div>
+                                                 <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0" type="date"
+                                                     data-rp-wrapper="#datepickerWrapperFromTwo"
+                                                     data-rp-type="range"
+                                                     data-rp-date-format="M d / Y"
+                                                     data-rp-default-date='["Jul 7 / 2020", "Aug 25 / 2020"]'>
+                                            </div>
+                                             <!-- End Datepicker -->
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0 dropdown-custom">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Rooms and Guests</span>
+                                        <a id="basicDropdownClickInvoker2" class="dropdown-nav-link dropdown-toggle d-flex pt-3 pb-2" href="javascript:;" role="button"
+                                            aria-controls="basicDropdownClick2"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-target="#basicDropdownClick2"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-duration="300"
+                                            data-unfold-delay="300"
+                                            data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp"
+                                            data-unfold-animation-out="fadeOut">
+                                            <i class="flaticon-plus d-flex align-items-center mr-3 font-size-18 text-primary font-weight-semi-bold"></i>
+                                            <span class="text-black font-size-16 font-weight-semi-bold">2 Rooms - 3 Guests</span>
+                                        </a>
+                                        <div id="basicDropdownClick2" class="dropdown-menu dropdown-unfold col-11 m-0" aria-labelledby="basicDropdownClickInvoker2">
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Rooms</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Adults</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Child</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-right py-1 pr-5">
+                                                <a class="text-primary font-weight-semi-bold font-size-16" href="#">Done</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-2 align-self-lg-end text-md-right">
+                                        <button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass font-size-20 mr-2"></i>Search</button>
+                                    </div>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Search Jobs Form -->
+                    </div>
+                    <div class="tab-pane fade" id="pills-three-example2" role="tabpanel" aria-labelledby="pills-three-example2-tab">
+                        <!-- Search Jobs Form -->
+                        <div class="card border-0 tab-shadow">
+                            <div class="card-body">
+                                <form class="js-validate">
+                                  <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
+                                    <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Destination or Hotel Name</span>
+                                        <!-- Select -->
+                                        <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold" title="Where are you going?"
+                                            data-style=""
+                                            data-live-search="true"
+                                            data-searchbox-classes="input-group-sm">
+                                            <option class="border-bottom border-color-1" value="project1" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">London, United Kingdom</span>
+                                                </span>'>
+                                                London, United Kingdom
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project2" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New York, United States</span>
+                                                </span>'>
+                                                New York, United States
+                                            </option>
+                                            <option  class="border-bottom border-color-1" value="project3" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New South Wales, Australia</span>
+                                                </span>'>
+                                                New South Wales, Australia
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Istanbul, Turkey</span>
+                                                </span>'>
+                                                Istanbul, Turkey
+                                            </option>
+                                            <option class="" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Reykjavík, Iceland</span>
+                                                </span>'>
+                                                Reykjavík, Iceland
+                                            </option>
+                                        </select>
+                                        <!-- End Select -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Check In - Out</span>
+                                        <div class="border-bottom border-width-2 border-color-1">
+                                            <div id="datepickerWrapperFromThree" class="u-datepicker input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="d-flex align-items-center mr-2">
+                                                      <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                    </span>
+                                                </div>
+                                                 <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0" type="date"
+                                                     data-rp-wrapper="#datepickerWrapperFromThree"
+                                                     data-rp-type="range"
+                                                     data-rp-date-format="M d / Y"
+                                                     data-rp-default-date='["Jul 7 / 2020", "Aug 25 / 2020"]'>
+                                            </div>
+                                             <!-- End Datepicker -->
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0 dropdown-custom">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Rooms and Guests</span>
+                                        <a id="basicDropdownClickInvoker3" class="dropdown-nav-link dropdown-toggle d-flex pt-3 pb-2" href="javascript:;" role="button"
+                                            aria-controls="basicDropdownClick3"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-target="#basicDropdownClick3"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-duration="300"
+                                            data-unfold-delay="300"
+                                            data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp"
+                                            data-unfold-animation-out="fadeOut">
+                                            <i class="flaticon-plus d-flex align-items-center mr-3 font-size-18 text-primary font-weight-semi-bold"></i>
+                                            <span class="text-black font-size-16 font-weight-semi-bold">2 Rooms - 3 Guests</span>
+                                        </a>
+                                        <div id="basicDropdownClick3" class="dropdown-menu dropdown-unfold col-11 m-0" aria-labelledby="basicDropdownClickInvoker3">
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Rooms</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Adults</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Child</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-right py-1 pr-5">
+                                                <a class="text-primary font-weight-semi-bold font-size-16" href="#">Done</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-2 align-self-lg-end text-md-right">
+                                        <button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass font-size-20 mr-2"></i>Search</button>
+                                    </div>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Search Jobs Form -->
+                    </div>
+                    <div class="tab-pane fade" id="pills-four-example2" role="tabpanel" aria-labelledby="pills-four-example2-tab">
+                        <!-- Search Jobs Form -->
+                        <div class="card border-0 tab-shadow">
+                            <div class="card-body">
+                                <form class="js-validate">
+                                  <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
+                                    <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Destination or Hotel Name</span>
+                                        <!-- Select -->
+                                        <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold" title="Where are you going?"
+                                            data-style=""
+                                            data-live-search="true"
+                                            data-searchbox-classes="input-group-sm">
+                                            <option class="border-bottom border-color-1" value="project1" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">London, United Kingdom</span>
+                                                </span>'>
+                                                London, United Kingdom
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project2" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New York, United States</span>
+                                                </span>'>
+                                                New York, United States
+                                            </option>
+                                            <option  class="border-bottom border-color-1" value="project3" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New South Wales, Australia</span>
+                                                </span>'>
+                                                New South Wales, Australia
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Istanbul, Turkey</span>
+                                                </span>'>
+                                                Istanbul, Turkey
+                                            </option>
+                                            <option class="" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Reykjavík, Iceland</span>
+                                                </span>'>
+                                                Reykjavík, Iceland
+                                            </option>
+                                        </select>
+                                        <!-- End Select -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Check In - Out</span>
+                                        <div class="border-bottom border-width-2 border-color-1">
+                                            <div id="datepickerWrapperFromfour" class="u-datepicker input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="d-flex align-items-center mr-2">
+                                                      <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                    </span>
+                                                </div>
+                                                 <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0" type="date"
+                                                     data-rp-wrapper="#datepickerWrapperFromfour"
+                                                     data-rp-type="range"
+                                                     data-rp-date-format="M d / Y"
+                                                     data-rp-default-date='["Jul 7 / 2020", "Aug 25 / 2020"]'>
+                                            </div>
+                                             <!-- End Datepicker -->
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0 dropdown-custom">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Rooms and Guests</span>
+                                        <a id="basicDropdownClickInvoker4" class="dropdown-nav-link dropdown-toggle d-flex pt-3 pb-2" href="javascript:;" role="button"
+                                            aria-controls="basicDropdownClick4"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-target="#basicDropdownClick4"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-duration="300"
+                                            data-unfold-delay="300"
+                                            data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp"
+                                            data-unfold-animation-out="fadeOut">
+                                            <i class="flaticon-plus d-flex align-items-center mr-3 font-size-18 text-primary font-weight-semi-bold"></i>
+                                            <span class="text-black font-size-16 font-weight-semi-bold">2 Rooms - 3 Guests</span>
+                                        </a>
+                                        <div id="basicDropdownClick4" class="dropdown-menu dropdown-unfold col-11 m-0" aria-labelledby="basicDropdownClickInvoker4">
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Rooms</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Adults</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Child</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-right py-1 pr-5">
+                                                <a class="text-primary font-weight-semi-bold font-size-16" href="#">Done</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-2 align-self-lg-end text-md-right">
+                                        <button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass font-size-20 mr-2"></i>Search</button>
+                                    </div>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Search Jobs Form -->
+                    </div>
+                    <div class="tab-pane fade" id="pills-five-example2" role="tabpanel" aria-labelledby="pills-five-example2-tab">
+                        <!-- Search Jobs Form -->
+                        <div class="card border-0 tab-shadow">
+                            <div class="card-body">
+                                <form class="js-validate">
+                                  <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
+                                    <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Destination or Hotel Name</span>
+                                        <!-- Select -->
+                                        <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold" title="Where are you going?"
+                                            data-style=""
+                                            data-live-search="true"
+                                            data-searchbox-classes="input-group-sm">
+                                            <option class="border-bottom border-color-1" value="project1" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">London, United Kingdom</span>
+                                                </span>'>
+                                                London, United Kingdom
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project2" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New York, United States</span>
+                                                </span>'>
+                                                New York, United States
+                                            </option>
+                                            <option  class="border-bottom border-color-1" value="project3" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New South Wales, Australia</span>
+                                                </span>'>
+                                                New South Wales, Australia
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Istanbul, Turkey</span>
+                                                </span>'>
+                                                Istanbul, Turkey
+                                            </option>
+                                            <option class="" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Reykjavík, Iceland</span>
+                                                </span>'>
+                                                Reykjavík, Iceland
+                                            </option>
+                                        </select>
+                                        <!-- End Select -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Check In - Out</span>
+                                        <div class="border-bottom border-width-2 border-color-1">
+                                            <div id="datepickerWrapperFromFive" class="u-datepicker input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="d-flex align-items-center mr-2">
+                                                      <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                    </span>
+                                                </div>
+                                                 <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0" type="date"
+                                                     data-rp-wrapper="#datepickerWrapperFromFive"
+                                                     data-rp-type="range"
+                                                     data-rp-date-format="M d / Y"
+                                                     data-rp-default-date='["Jul 7 / 2020", "Aug 25 / 2020"]'>
+                                            </div>
+                                             <!-- End Datepicker -->
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0 dropdown-custom">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Rooms and Guests</span>
+                                        <a id="basicDropdownClickInvoker5" class="dropdown-nav-link dropdown-toggle d-flex pt-3 pb-2" href="javascript:;" role="button"
+                                            aria-controls="basicDropdownClick5"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-target="#basicDropdownClick5"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-duration="300"
+                                            data-unfold-delay="300"
+                                            data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp"
+                                            data-unfold-animation-out="fadeOut">
+                                            <i class="flaticon-plus d-flex align-items-center mr-3 font-size-18 text-primary font-weight-semi-bold"></i>
+                                            <span class="text-black font-size-16 font-weight-semi-bold">2 Rooms - 3 Guests</span>
+                                        </a>
+                                        <div id="basicDropdownClick5" class="dropdown-menu dropdown-unfold col-11 m-0" aria-labelledby="basicDropdownClickInvoker5">
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Rooms</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Adults</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Child</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-right py-1 pr-5">
+                                                <a class="text-primary font-weight-semi-bold font-size-16" href="#">Done</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-2 align-self-lg-end text-md-right">
+                                        <button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass font-size-20 mr-2"></i>Search</button>
+                                    </div>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Search Jobs Form -->
+                    </div>
+                    <div class="tab-pane fade" id="pills-six-example2" role="tabpanel" aria-labelledby="pills-six-example2-tab">
+                        <!-- Search Jobs Form -->
+                        <div class="card border-0 tab-shadow">
+                            <div class="card-body">
+                                <form class="js-validate">
+                                  <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
+                                    <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Destination or Hotel Name</span>
+                                        <!-- Select -->
+                                        <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold" title="Where are you going?"
+                                            data-style=""
+                                            data-live-search="true"
+                                            data-searchbox-classes="input-group-sm">
+                                            <option class="border-bottom border-color-1" value="project1" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">London, United Kingdom</span>
+                                                </span>'>
+                                                London, United Kingdom
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project2" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New York, United States</span>
+                                                </span>'>
+                                                New York, United States
+                                            </option>
+                                            <option  class="border-bottom border-color-1" value="project3" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New South Wales, Australia</span>
+                                                </span>'>
+                                                New South Wales, Australia
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Istanbul, Turkey</span>
+                                                </span>'>
+                                                Istanbul, Turkey
+                                            </option>
+                                            <option class="" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Reykjavík, Iceland</span>
+                                                </span>'>
+                                                Reykjavík, Iceland
+                                            </option>
+                                        </select>
+                                        <!-- End Select -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Check In - Out</span>
+                                        <div class="border-bottom border-width-2 border-color-1">
+                                            <div id="datepickerWrapperFromSix" class="u-datepicker input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="d-flex align-items-center mr-2">
+                                                      <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                    </span>
+                                                </div>
+                                                 <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0" type="date"
+                                                     data-rp-wrapper="#datepickerWrapperFromSix"
+                                                     data-rp-type="range"
+                                                     data-rp-date-format="M d / Y"
+                                                     data-rp-default-date='["Jul 7 / 2020", "Aug 25 / 2020"]'>
+                                            </div>
+                                             <!-- End Datepicker -->
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0 dropdown-custom">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Rooms and Guests</span>
+                                        <a id="basicDropdownClickInvoker6" class="dropdown-nav-link dropdown-toggle d-flex pt-3 pb-2" href="javascript:;" role="button"
+                                            aria-controls="basicDropdownClick6"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-target="#basicDropdownClick6"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-duration="300"
+                                            data-unfold-delay="300"
+                                            data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp"
+                                            data-unfold-animation-out="fadeOut">
+                                            <i class="flaticon-plus d-flex align-items-center mr-3 font-size-18 text-primary font-weight-semi-bold"></i>
+                                            <span class="text-black font-size-16 font-weight-semi-bold">2 Rooms - 3 Guests</span>
+                                        </a>
+                                        <div id="basicDropdownClick6" class="dropdown-menu dropdown-unfold col-11 m-0" aria-labelledby="basicDropdownClickInvoker6">
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Rooms</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Adults</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Child</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-right py-1 pr-5">
+                                                <a class="text-primary font-weight-semi-bold font-size-16" href="#">Done</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-2 align-self-lg-end text-md-right">
+                                        <button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass font-size-20 mr-2"></i>Search</button>
+                                    </div>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Search Jobs Form -->
+                    </div>
+                    <div class="tab-pane fade" id="pills-seven-example2" role="tabpanel" aria-labelledby="pills-seven-example2-tab">
+                        <!-- Search Jobs Form -->
+                        <div class="card border-0 tab-shadow">
+                            <div class="card-body">
+                                <form class="js-validate">
+                                  <div class="row d-block nav-select d-lg-flex mb-lg-3 px-2 px-lg-3 align-items-end">
+                                    <div class="col-sm-12 col-lg-3dot6 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <span class="d-block text-gray-1 font-weight-normal text-left mb-0">Destination or Hotel Name</span>
+                                        <!-- Select -->
+                                        <select class="js-select selectpicker dropdown-select tab-dropdown col-12 pl-0 flaticon-pin-1 d-flex align-items-center text-primary font-weight-semi-bold" title="Where are you going?"
+                                            data-style=""
+                                            data-live-search="true"
+                                            data-searchbox-classes="input-group-sm">
+                                            <option class="border-bottom border-color-1" value="project1" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">London, United Kingdom</span>
+                                                </span>'>
+                                                London, United Kingdom
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project2" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New York, United States</span>
+                                                </span>'>
+                                                New York, United States
+                                            </option>
+                                            <option  class="border-bottom border-color-1" value="project3" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">New South Wales, Australia</span>
+                                                </span>'>
+                                                New South Wales, Australia
+                                            </option>
+                                            <option class="border-bottom border-color-1" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Istanbul, Turkey</span>
+                                                </span>'>
+                                                Istanbul, Turkey
+                                            </option>
+                                            <option class="" value="project4" data-content='
+                                                <span class="d-flex align-items-center">
+                                                    <span class="font-size-16">Reykjavík, Iceland</span>
+                                                </span>'>
+                                                Reykjavík, Iceland
+                                            </option>
+                                        </select>
+                                        <!-- End Select -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-lg-3dot7 col-xl-3gdot5 mb-4 mb-lg-0 ">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Check In - Out</span>
+                                        <div class="border-bottom border-width-2 border-color-1">
+                                            <div id="datepickerWrapperFromSeven" class="u-datepicker input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="d-flex align-items-center mr-2">
+                                                      <i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+                                                    </span>
+                                                </div>
+                                                 <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent  border-0" type="date"
+                                                     data-rp-wrapper="#datepickerWrapperFromSeven"
+                                                     data-rp-type="range"
+                                                     data-rp-date-format="M d / Y"
+                                                     data-rp-default-date='["Jul 7 / 2020", "Aug 25 / 2020"]'>
+                                            </div>
+                                             <!-- End Datepicker -->
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-3 mb-4 mb-lg-0 dropdown-custom">
+                                        <!-- Input -->
+                                        <span class="d-block text-gray-1 text-left font-weight-normal mb-0">Rooms and Guests</span>
+                                        <a id="basicDropdownClickInvoker7" class="dropdown-nav-link dropdown-toggle d-flex pt-3 pb-2" href="javascript:;" role="button"
+                                            aria-controls="basicDropdownClick7"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-target="#basicDropdownClick7"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-duration="300"
+                                            data-unfold-delay="300"
+                                            data-unfold-hide-on-scroll="true"
+                                            data-unfold-animation-in="slideInUp"
+                                            data-unfold-animation-out="fadeOut">
+                                            <i class="flaticon-plus d-flex align-items-center mr-3 font-size-18 text-primary font-weight-semi-bold"></i>
+                                            <span class="text-black font-size-16 font-weight-semi-bold">2 Rooms - 3 Guests</span>
+                                        </a>
+                                        <div id="basicDropdownClick7" class="dropdown-menu dropdown-unfold col-11 m-0" aria-labelledby="basicDropdownClickInvoker7">
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Rooms</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3 mb-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Adults</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 py-2 px-3">
+                                                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                                                    <span class="d-block font-size-16 text-secondary font-weight-medium">Child</span>
+                                                    <div class="d-flex">
+                                                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-minus btn-icon__inner"></small>
+                                                        </a>
+                                                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                                                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                                                            <small class="fas fa-plus btn-icon__inner"></small>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-right py-1 pr-5">
+                                                <a class="text-primary font-weight-semi-bold font-size-16" href="#">Done</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Input -->
+                                    </div>
+
+                                    <div class="col-sm-12 col-xl-2 align-self-lg-end text-md-right">
+                                        <button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass font-size-20 mr-2"></i>Search</button>
+                                    </div>
+                                  </div>
+                                  <!-- End Checkbox -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Search Jobs Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== END HERO ========== -->
+
+    <!-- Destinantion v1 -->
+    <div class="destinantion-block destinantion-v1 border-bottom border-color-8">
+        <div class="container space-bottom-1 space-top-lg-3"></div>
+    </div>
+    <!-- End Destinantion v1 -->
+
+    <!-- Icon Block v1 -->
+    <div class="icon-block-center icon-center-v1 border-bottom border-color-8">
+        <div class="container text-center space-1">
+            <!-- Title -->
+            <div class="w-md-80 w-lg-50 text-center mx-md-auto pb-1 mt-3">
+                <h2 class="section-title text-black font-size-30 font-weight-bold">Why Choose Us</h2>
+            </div>
+            <!-- End Title -->
+
+            <!-- Features -->
+            <div class="mb-2">
+                <div class="row">
+                    <!-- Icon Block -->
+                    <div class="col-md-4">
+                        <i class="flaticon-price text-primary font-size-80 mb-3"></i>
+                        <h5 class="font-size-17 text-dark font-weight-bold mb-2"><a href="#">Competitive Pricing</a></h5>
+                        <p class="text-gray-1 px-xl-2 px-uw-7">With 500+ suppliers and the purchasing power of 300 million members, mytravel.com can save you more!</p>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="col-md-4">
+                        <i class="flaticon-medal text-primary font-size-80 mb-3"></i>
+                        <h5 class="font-size-17 text-dark font-weight-bold mb-2"><a href="#">Award-Winning Service</a></h5>
+                        <p class="text-gray-1 px-xl-2 px-uw-7">Travel worry-free knowing that we're here if you needus, 24 hours a day</p>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="col-md-4">
+                        <i class="flaticon-global-1 text-primary font-size-80 mb-3"></i>
+                        <h5 class="font-size-17 text-dark font-weight-bold mb-2"><a href="#">Worldwide Coverage</a></h5>
+                        <p class="text-gray-1 px-xl-2 px-uw-7">Over 1,200,000 hotels in more than 200 countries and regions & flights to over 5,000 cities</p>
+                    </div>
+                    <!-- End Icon Block -->
+                </div>
+            </div>
+            <!-- End Features -->
+        </div>
+    </div>
+    <!-- End Icon Block v1 -->
+
+    <!-- Deal Carousel v1 -->
+   <!-- <div class="deals-carousel-block deals-carousel-v1 border-bottom border-color-8">
+        <div class="container space-1">
+            <h2 class="section-title text-center mb-5 mt-3">Today's Top Deals</h2>
+            <div class="js-slick-carousel u-slick u-slick--gutters-3" data-slides-show="3" data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-classic--v2 u-slick__arrow-centered--y rounded-circle" data-arrow-left-classes="flaticon-back u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-xl-n8" data-arrow-right-classes="flaticon-next u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-xl-n8"
+            data-pagi-classes="d-lg-none text-center u-slick__pagination mt-4" data-responsive='[ { "breakpoint": 1025, "settings": { "slidesToShow": 3 } }, { "breakpoint": 992, "settings": { "slidesToShow": 2 } }, { "breakpoint": 768, "settings": { "slidesToShow": 1 } }, { "breakpoint": 554, "settings": { "slidesToShow": 1 } } ]'>
+                <div class="js-slide mb-4">
+                    <a class="d-block rounded-xs overflow-hidden mb-3" href="../blog/blog-single.html">
+                        <img class="img-fluid w-100" src="../../assets/img/410x300/img1.jpg" alt="Image-Description">
+                    </a>
+                    <h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+                        <a href="../blog/blog-single.html">Earning Asiana Club Miles Just Got Easier!</a>
+                    </h6>
+                    <a class="text-gray-1" href="../blog/blog-single.html">
+                        <span>Book Hotels and Earn Asiana Club Miles!</span>
+                    </a>
+                </div>
+                <div class="js-slide mb-4">
+                    <a class="d-block rounded-xs overflow-hidden mb-3" href="../blog/blog-single.html">
+                        <img class="img-fluid w-100" src="../../assets/img/410x300/img2.jpg" alt="Image-Description">
+                    </a>
+                    <h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+                        <a href="../blog/blog-single.html">Save big on hotels!</a>
+                    </h6>
+                    <a class="text-gray-1" href="../blog/blog-single.html">
+                        <span>Book and save with Trip.com on your next stay</span>
+                    </a>
+                </div>
+                <div class="js-slide mb-4">
+                    <a class="d-block rounded-xs overflow-hidden mb-3" href="../blog/blog-single.html">
+                        <img class="img-fluid w-100" src="../../assets/img/410x300/img3.jpg" alt="Image-Description">
+                    </a>
+                    <h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+                        <a href="../blog/blog-single.html">Experience Europe Your Way</a>
+                    </h6>
+                    <a class="text-gray-1" href="../blog/blog-single.html">
+                        <span>With up to 30% Off, experience Europe your way!</span>
+                    </a>
+                </div>
+                <div class="js-slide mb-4">
+                    <a class="d-block rounded-xs overflow-hidden mb-3" href="../blog/blog-single.html">
+                        <img class="img-fluid w-100" src="../../assets/img/410x300/img1.jpg" alt="Image-Description">
+                    </a>
+                    <h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+                        <a href="../blog/blog-single.html">Earning Asiana Club Miles Just Got Easier!</a>
+                    </h6>
+                    <a class="text-gray-1" href="../blog/blog-single.html">
+                        <span>Book Hotels and Earn Asiana Club Miles!</span>
+                    </a>
+                </div>
+                <div class="js-slide mb-4">
+                    <a class="d-block rounded-xs overflow-hidden mb-3" href="../blog/blog-single.html">
+                        <img class="img-fluid w-100" src="../../assets/img/410x300/img2.jpg" alt="Image-Description">
+                    </a>
+                    <h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+                        <a href="../blog/blog-single.html">Save big on hotels!</a>
+                    </h6>
+                    <a class="text-gray-1" href="../blog/blog-single.html">
+                        <span>Book and save with Trip.com on your next stay</span>
+                    </a>
+                </div>
+
+                <div class="js-slide mb-4">
+                    <a class="d-block rounded-xs overflow-hidden mb-3" href="../blog/blog-single.html">
+                        <img class="img-fluid w-100" src="../../assets/img/410x300/img3.jpg" alt="Image-Description">
+                    </a>
+                    <h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+                        <a href="../blog/blog-single.html">Experience Europe Your Way</a>
+                    </h6>
+                    <a class="text-gray-1" href="../blog/blog-single.html">
+                        <span>With up to 30% Off, experience Europe your way!</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- End Deal Carousel v1 -->
+</main>
+<!-- ========== END MAIN CONTENT ========== -->
+
+
+
+<!-- JS Global Compulsory -->
+
+
+<!-- JS Plugins Init. -->
+
+

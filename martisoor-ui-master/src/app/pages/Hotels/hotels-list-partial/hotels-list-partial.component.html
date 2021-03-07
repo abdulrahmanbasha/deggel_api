@@ -1,0 +1,75 @@
+<div class="row" *ngIf="this.showSpinner">
+
+<div class="text-center justify-content-center" >
+     
+
+</div>
+
+<div class="col-md-4 col-lg-4 mb-3 mb-md-4 pb-1" >
+    
+</div>
+
+<div class="col-md-4 col-lg-4 mb-3 mb-md-4 pb-1" *ngIf="this.showSpinner">
+    <div class="col-md-4 col-lg-4 mb-3 mb-md-4 pb-1">
+    </div>
+    <div class="col-md-4 col-lg-4 mb-3 mb-md-4 pb-1">
+      <app-loading-spinner ></app-loading-spinner> 
+    </div>
+    <div class="col-md-4 col-lg-4 mb-3 mb-md-4 pb-1">
+    </div>
+</div>
+
+<div class="col-md-4 col-lg-4 mb-3 mb-md-4 pb-1">
+    
+</div>
+
+
+
+    
+ </div>
+
+ <div class="row" *ngIf="!this.showSpinner" >  
+    <div  class="col-md-6 col-lg-4 mb-3 mb-md-4 pb-1" *ngFor="let hotel of this.hotels"> 
+        <div class="card transition-3d-hover shadow-hover-2 tab-card h-100" >
+            <div class="position-relative">
+                <a routerLink="/hoteldetails/{{hotel.id}}" class="d-block gradient-overlay-half-bg-gradient-v5">
+                    <img class="min-height-230 bg-img-hero card-img-top" src="../../assets/room-pics/1.jpg" alt="img">
+                </a>
+                <div class="position-absolute top-0 right-0 pt-3 pr-3">
+                  <button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+                    <span class="flaticon-valentine-heart"></span>
+                  </button>
+                </div>
+                <div class="position-absolute bottom-0 left-0 right-0">
+                    <div class="px-4 pb-3">
+                        <a routerLink="/hoteldetails/{{hotel.id}}" class="d-block"> 
+                            <div class="d-flex align-items-center font-size-14 text-white">
+                                <i class="icon flaticon-pin-1 mr-2 font-size-20"></i> {{ hotel.address.area }}, {{ hotel.address.city }}
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body pl-3 pr-4 pt-2 pb-3">
+                <div class="ml-1 mb-2">
+                    <div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+                        <div class="green-lighter" >
+                            <small  class="fas fa-star"></small> 
+                        </div>
+                    </div>
+                </div>
+                <a routerLink="/hoteldetails/{{hotel.id}}" class="card-title font-size-17 font-weight-medium text-dark">{{ hotel.hotel_name }}</a>
+                <div class="mt-2 mb-3">
+                    <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">{{hotel.average_review}}/5</span>
+                    <span class="font-size-14 text-gray-1 ml-2">({{ hotel.number_of_review_count}} reviews)</span>
+                </div>
+                <div class="mb-0">
+                    <span class="mr-1 font-size-14 text-gray-1">From</span>
+                    <span class="font-weight-bold">{{hotel.lowest_room_price | currency}}</span>
+                    <span class="font-size-14 text-gray-1"> / night</span>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
