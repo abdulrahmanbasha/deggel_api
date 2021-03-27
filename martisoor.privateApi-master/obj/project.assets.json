@@ -4633,7 +4633,7 @@
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
-      "sha512": "33vTyijzAVEfbuNFts68R7bW02cJMiw21MFgMBk+XL+thcbv335PVD1+DdMSvN6e5DeAR4OmPSRsKIr86Yk4qg==",
+      "sha512": "EcnaSsPTqx2MGnHrmWOD0ugbuuqVT8iICqSqPzi45V5/MA1LjUNb0kwgcxBGqizV1R+WeBK7/Gw25Jzkyk9bIw==",
       "type": "package",
       "path": "microsoft.extensions.fileproviders.abstractions/2.2.0",
       "files": [
@@ -5839,11 +5839,12 @@
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "HpoVH7HE9uIJRqs+gUtXLTaj+UKpFlMHY5EewEI7SmGtkJt6FgGSXKSUEo4f5ZighrzTnM/QURTyai4aThSR/Q==",
+      "sha512": "A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
       "type": "package",
       "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -6011,11 +6012,12 @@
       ]
     },
     "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "uUPnEYGcWkjOMPf00LZleu/kaUIQtbZi/ohcB9Um7CdoY3Rc1oFUfqmO7S0bHfwA85lsbDG2bys9JG9tEgdJfg==",
+      "sha512": "LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
       "type": "package",
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -6026,11 +6028,12 @@
       ]
     },
     "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "bNWP+VAOzGvMHyt++vcBdcBAKzdgP3twAbw2FK05acp01eV3m9gLgU1WeetGqsN+FHcTLa5wmhWcnGGM4tSWNA==",
+      "sha512": "38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
       "type": "package",
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -6041,11 +6044,12 @@
       ]
     },
     "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "unFutSlSNY2yIOi1BXxwuzZ+PB1riOQQ1RCKqmAo+gNxCWjx7lfgMAI9ZzzUu7SJ6+XonxFy5RQZt6MLIhXwLw==",
+      "sha512": "YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "type": "package",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -8903,11 +8907,12 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "S65/bWMLzxNqEqNvxMxJ77l61Uf+95CMiFGpBV96T4j/EM0gPVfSzpyUuwaskSJiG6/NPiKA/WluZeV57IBH8A==",
+      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10313,11 +10318,12 @@
       ]
     },
     "System.Xml.XmlDocument/4.3.0": {
-      "sha512": "jmeu9b1aamBAQiKGvvPgHgkkfSN+mLIy6kjOFdgIBM4xkTGhdx6k6Wf2PnVjzaRgziMATn1YiRy00NoyKorSKQ==",
+      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "type": "package",
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10519,23 +10525,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AbdulRahman\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\BASHA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AbdulRahman\\Documents\\SomDigital\\Deggel\\new\\Martisoor\\martisoor.privateApi-master\\bknsystem.privateApi.csproj",
+      "projectUniqueName": "C:\\Users\\BASHA\\Documents\\SomDigital\\Clients\\Deggel\\deggel\\martisoor.privateApi-master\\bknsystem.privateApi.csproj",
       "projectName": "bknsystem.privateApi",
-      "projectPath": "C:\\Users\\AbdulRahman\\Documents\\SomDigital\\Deggel\\new\\Martisoor\\martisoor.privateApi-master\\bknsystem.privateApi.csproj",
-      "packagesPath": "C:\\Users\\AbdulRahman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AbdulRahman\\Documents\\SomDigital\\Deggel\\new\\Martisoor\\martisoor.privateApi-master\\obj\\",
+      "projectPath": "C:\\Users\\BASHA\\Documents\\SomDigital\\Clients\\Deggel\\deggel\\martisoor.privateApi-master\\bknsystem.privateApi.csproj",
+      "packagesPath": "C:\\Users\\BASHA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BASHA\\Documents\\SomDigital\\Clients\\Deggel\\deggel\\martisoor.privateApi-master\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\AbdulRahman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BASHA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10636,6 +10638,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -10644,7 +10664,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21077.7\\RuntimeIdentifierGraph.json"
       }
     }
   }

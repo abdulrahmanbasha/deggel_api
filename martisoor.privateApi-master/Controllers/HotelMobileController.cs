@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using bknsystem.privateApi.Dtos;
 using bknsystem.privateApi.Models;
 using bknsystem.privateApi.Repositories;
 using bknsystem.privateApi.Services;
@@ -47,11 +48,11 @@ namespace bknsystem.privateApi.Controllers
         }
 
         [HttpGet("GetAllHotels")]
-        public ActionResult<List<hotel>> GetAllHotels()
+        public ActionResult<List<HotelListSummary_Dto>> GetAllHotels([FromQuery] RequestParams requestParams = default)
         {
             try
             {
-                var hotels = _hotelservice.GetAllHotels();
+                var hotels = _repository.GetHotelListSummaries(requestParams);
                 //foreach (var hotelDetail in hotels)
                 //{
                 //    hotelDetail.lowestRoomPrice = hotelDetail.rooms.Count == 0 ? 20 : hotelDetail.rooms.Min(room => room.room_price);
