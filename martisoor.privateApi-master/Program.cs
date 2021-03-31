@@ -21,7 +21,7 @@ namespace bknsystem.privateApi
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://192.168.1.100:5022/", "https://192.168.1.100:5033/");
+                    webBuilder.UseUrls("http://localhost:5022/", "https://localhost:5033/");
                 });
     }
 }

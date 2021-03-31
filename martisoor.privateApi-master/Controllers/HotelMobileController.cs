@@ -79,6 +79,21 @@ namespace bknsystem.privateApi.Controllers
             }
         }
 
+
+        [HttpGet("GethotelsById/{Id}")]
+        public ActionResult<hotel> GethotelsById(string Id)
+        {
+            try
+            {
+                var hotels = _hotelservice.GetHotelsById(Id);
+                return hotels;
+            }
+            catch (Exception e)
+            {
+                return NotFound(e);
+            }
+        }
+
         [HttpGet("SearchHotelsByName")]
         public ActionResult<List<hotel>> SearchHotelsByName([FromQuery] string name)
         {
